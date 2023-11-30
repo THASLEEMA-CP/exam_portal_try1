@@ -1,0 +1,26 @@
+<!-- templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Title{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'register_staff' %}">Register Staff</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <!-- Add more navigation links as needed -->
+    </ul>
+</nav>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>
+

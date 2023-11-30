@@ -1,0 +1,36 @@
+/* static/css/styles.css */
+
+/* Reset some default styles for the navigation */
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #749ba1;
+    height:100px;
+    float:right;
+    width:100%;
+
+}
+
+/* Style for the navigation links */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: black; /* Change the color on hover */
+}
+
+
